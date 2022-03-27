@@ -29,10 +29,10 @@ func editImage(body []byte) []byte {
 
 	dw.SetFillColor(pw)
 	dw.SetFontSize(72)
-	dw.Annotation(100, 175, "LGTM")
+	dw.Annotation(150, 210, "LGTM")
 
 	mw.ReadImageBlob(body)
-	mw.ResizeImage(400, 300, imagick.FILTER_POINT, 0)
+	mw.ResizeImage(500, 400, imagick.FILTER_POINT, 0)
 
 	mw.DrawImage(dw)
 
